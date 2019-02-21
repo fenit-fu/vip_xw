@@ -1,0 +1,32 @@
+{
+  "name": "xwys",
+  "version": "1.0.0",
+  "description": "movie new",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "start": "cross-env NODE_ENV=production node app.js",
+    "lint": "eslint new-university/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "movie"
+  ],
+  "author": "gongmw",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.14.1",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.14",
+    "nodemon": "^1.18.10",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "winston-logstash-transport": "^2.0.0"
+  }
+}

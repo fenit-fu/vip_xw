@@ -1,0 +1,22 @@
+{
+  "port": 8081,
+  "HOST": "127.0.0.1",
+  "mongodbOption": {
+    url: 'mongodb://47.111.28.42:30003/xwys-test',
+  },
+  "redisOption": {
+      "host": "47.75.73.120",
+      "port": "30007",
+      "password": 123456,
+      "db": "xwys-test",
+    },
+  "winston": {
+    "application": "xyws-01-local",
+    "transports": {
+      "LogstashTransport": {
+        "host": "log.mo",
+        "port": 60201
+      }
+    }
+  }
+}
