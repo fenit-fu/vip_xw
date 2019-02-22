@@ -27,6 +27,8 @@
     "nodemon": "^1.18.10",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
+    "video.js": "^7.4.1",
+    "videojs-contrib-hls": "^5.15.0",
     "winston-logstash-transport": "^2.0.0"
   }
 }

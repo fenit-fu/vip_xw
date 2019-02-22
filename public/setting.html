@@ -1,81 +1,29 @@
 ﻿<!DOCTYPE html>
-<html lang="zxx">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Atzona - Tours and Travel Mobile Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="HandheldFriendly" content="True">
-	
-	<link rel="shortcut icon" href="img/favicon.png">
-	
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/materialize.min.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/slick-theme.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.transitions.css">
-	<link rel="stylesheet" href="css/lightbox.min.css">
-	<link rel="stylesheet" href="css/animsition.css">
-	<link rel="stylesheet" href="css/style.css">
-	
+    <meta charset="utf-8">
+    <title>videojs-contrib-hls Demo</title>
+    <link href="../node_modules/video.js/dist/video-js.css" rel="stylesheet">
+    <style>
+
+    </style>
+
 </head>
-<body class="animsition">
+<body>
+<video id="videojs-contrib-hls-player" class="video-js vjs-default-skin" controls>
+    <source src="https://acfun.iqiyi-kuyun.com/ppvod/CEA373893E753431106BE1FE32BF5054.m3u8"
+            type="application/x-mpegURL"/>
+</video>
 
-	<!-- navbar -->
-	<div class="navbar">
-		<div class="container">
-			<div class="icon"><a href="#" class="go-to-back"><img src="img/go-to-back.png" alt=""></a></div>
-			<div class="title"><h2>Settings</h2></div>
-		</div>
-	</div>
-	<!-- end navbar -->
-
-	<!-- settings -->
-	<div class="setting-app app-pages app-section">
-		<div class="container">
-			<form action="#">
-				<div class="img-uplod">
-					<img src="img/setting.png" alt="">
-				</div>
-				<div class="input-field">
-					<input type="file">
-				</div>
-				<div class="input-field">
-					<input type="text" class="validate" placeholder="Username">
-				</div>
-				<div class="input-field">
-					<input type="text" class="validate" placeholder="First Name">
-				</div>
-				<div class="input-field">
-					<input type="text" class="validate" placeholder="Last Name">
-				</div>
-				<div class="input-field">
-					<input type="number" class="validate" placeholder="Phone">
-				</div>
-				<div class="input-field">
-					<input id="email" type="email" class="validate" placeholder="Email">
-				</div>
-				<div class="input-field">
-					<textarea name="" id="" cols="30" rows="10" placeholder="Address"></textarea>
-				</div>
-				<div class="input-field">
-					<input id="password" type="email" class="validate" placeholder="Password">
-				</div>
-				<button class="button">Save Change</button>
-			</form>
-		</div>
-	</div>
-	<!-- end settings -->
-	
-	<!-- script -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/animsition.js"></script>
-	<script src="js/custom.js"></script>
-
+<script src="../node_modules/video.js/dist/video.js"></script>
+<script src="../node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+<script>
+  (function (window, videojs) {
+    var player = window.player = videojs('videojs-contrib-hls-player');
+    var loadUrl = document.getElementById('load-url');
+    var url = document.getElementById('url');
+  }(window, window.videojs));
+</script>
 </body>
 </html>
+

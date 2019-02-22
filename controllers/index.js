@@ -31,12 +31,31 @@ class IndexController {
 
   async getMovieDetailByUuid(req, res) {
     const id = (req.query.uuid).trim()
-    const options = {
-      url: `${config.get('reptileZxMovieUrl.wangzherongyaoDetail')}` + id + '?uuid' + id,
-      method: 'GET',
-      json: true
+
+    try {
+      const filmOptions = {
+        url: `${config.get('reptileZxMovieUrl.wangzherongyao.filmDetail')}` + id + '?uuid=' + id,
+        method: 'GET',
+        json: true
+      }
+      const filmResult = await rp(filmOptions)
+      return res.sendOk({
+        data: filmResult,
+        type: 'film'
+      })
     }
-    res.sendOk(await rp(options))
+    catch (e) {
+      const teleplayOptions = {
+        url: `${config.get('reptileZxMovieUrl.wangzherongyao.teleplayDetail')}` + id + '?uuid=' + id,
+        method: 'GET',
+        json: true
+      }
+      const teleplayResult = await rp(teleplayOptions)
+      return res.sendOk({
+        data: teleplayResult,
+        type: 'teleplay'
+      })
+    }
   }
 }
 
