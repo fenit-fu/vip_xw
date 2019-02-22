@@ -1,14 +1,24 @@
 {
-  "port": 8081,
+  "port": 3001,
   "HOST": "127.0.0.1",
   "mongodbOption": {
-    url: 'mongodb://47.111.28.42:30003/xwys-test',
+    "url": 'mongodb://47.111.28.42:30003',
+    "options": {
+         useNewUrlParser: true
+       },
+    "dbName":'xwys-test'
   },
   "redisOption": {
       "host": "47.75.73.120",
       "port": "30007",
       "password": 123456,
       "db": "xwys-test",
+    },
+  "reptileZxMovieUrl": {
+      "wangzherongyao": "https://mzdy.tbhmdk.com/app/film-list?page=0&classifyKey=",
+      "wangzherongyaoSearch": "https://mzdy.tbhmdk.com/app/video/search?name=",
+      "wangzherongyaoDetail": "https://mzdy.tbhmdk.com/app/film/",
+      "xigua": "https://mzdy.tbhmdk.com/app/film-list?page=0&classifyKey=ZX",
     },
   "winston": {
     "application": "xyws-01-local",
