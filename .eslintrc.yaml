@@ -9,22 +9,22 @@
 
 #  parser: esprima,
 #  parser: babel-eslint,
-  parserOptions:
+parserOptions:
     # ecmaVersion - set to 3, 5 (default), 6, 7 or 8 to specify the version of ECMAScript you want to use.
     ecmaVersion: 8
     sourceType: module
     ecmaFeatures:
-      jsx: true
-      experimentalObjectRestSpread: true
+        jsx: true
+        experimentalObjectRestSpread: true
 
-  env:
+env:
     # "browser": true,
     node: true
     es6: true
     commonjs: true
     # mochajs: true
 
-  globals:
+globals:
     NODE_ENV: true
     NODE_CONFIG_DIR: true
     ROOT_PATH: true
@@ -37,13 +37,13 @@
     models: true
     sequelize: true
 
-  # "off"   or 0 - turn the rule off
-  # "warn"  or 1 - turn the rule on as a warning (doesn’t affect exit code)
-  # "error" or 2 - turn the rule on as an error (exit code is 1 when triggered)
+# "off"   or 0 - turn the rule off
+# "warn"  or 1 - turn the rule on as a warning (doesn’t affect exit code)
+# "error" or 2 - turn the rule on as an error (exit code is 1 when triggered)
 
-  # extends: eslint:recommended
+# extends: eslint:recommended
 
-  rules:
+rules:
     # Strict Mode Start {
     # [严格模式与 ECMAScript 6](https://github.com/luqin/exploring-es6-cn/blob/master/md/3.2.md)
     # 在 ECMAScript 6 中，类和模块内部都是隐式严格模式的 - 不需要写 use strict 标记。
@@ -74,7 +74,7 @@
         builtinGlobals: true,
         hoist: functions,
         allow: [_, __, $, $$, e, err, error, item, resolve, reject, done, fn, cb, callback, Promise]
-      }
+    }
     ]
 
     # 不允许初始化变量为undefined。因为不进行初始化，会默认初始化为undefined
@@ -141,9 +141,9 @@
 
     # 不允许使用多余的()
     no-extra-parens: [0, all, {
-      conditionalAssign: false,
+        conditionalAssign: false,
       # "returnAssign": false,
-      nestedBinaryExpressions: false
+        nestedBinaryExpressions: false
     }]
 
     # 不允许多余的分号
@@ -192,17 +192,17 @@
 
     # 使用有效的JSDoc注释
     valid-jsdoc: [
-      0,
-      {
-        prefer: {
-          # return: "returns"
-        },
-        requireReturn: false,
-        requireReturnType: false,
-        requireReturnDescription: false,
-        requireParamDescription: false
-        # "matchDescription": "^[A-Z][A-Za-z0-9\\s]*[.]$"
-      }
+        0,
+        {
+            prefer: {
+              # return: "returns"
+            },
+            requireReturn: false,
+            requireReturnType: false,
+            requireReturnDescription: false,
+            requireParamDescription: false
+              # "matchDescription": "^[A-Z][A-Za-z0-9\\s]*[.]$"
+        }
     ]
 
     # 保证`typeof`的结果是和有效的类型字符串进行比较
@@ -556,8 +556,8 @@
     # [√] 数组内，侧紧贴`[]`的位置不允许添加空格
     # --fix
     array-bracket-spacing: [
-      2, never,
-      {singleValue: false, objectsInArrays: false, arraysInArrays: false}
+        2, never,
+        {singleValue: false, objectsInArrays: false, arraysInArrays: false}
     ]
 
     # [√] 紧贴`{}`位置必须有空格
@@ -630,12 +630,12 @@
 
     # 是否统一在注释前后添加一个空行
     lines-around-comment: [error, {
-      beforeBlockComment: true,
-      afterBlockComment: false,
-      beforeLineComment: false,
-      afterLineComment: false,
-      allowBlockStart: true,
-      allowObjectStart: true
+        beforeBlockComment: true,
+        afterBlockComment: false,
+        beforeLineComment: false,
+        afterLineComment: false,
+        allowBlockStart: true,
+        allowObjectStart: true
     }]
 
     # 使用Unix换行符"LF"
@@ -782,11 +782,11 @@
 
     # 必须写JSDoc
     require-jsdoc: [0, {
-      require: {
-        FunctionDeclaration: true,
-        MethodDefinition: false,
-        ClassDeclaration: false
-      }
+        require: {
+            FunctionDeclaration: true,
+            MethodDefinition: false,
+            ClassDeclaration: false
+        }
     }]
 
     # 当`;`出现在表达式中间时，统一在它的后面添加一个空格，前面不允许有空格
@@ -824,9 +824,9 @@
     # 强制在注释前添加一个空格，除了一些标志注释之外
     # --fix
     spaced-comment: [2, always, {
-      exceptions: ['-', '+'],
+        exceptions: ['-', '+'],
       # space here to support sprockets directives
-      markers: ['=', '!']
+        markers: ['=', '!']
     }]
 
     # --fix

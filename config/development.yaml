@@ -4,25 +4,25 @@
   "mongodbOption": {
     "url": 'mongodb://47.111.28.42:30003',
     "options": {
-         useNewUrlParser: true
-       },
+      useNewUrlParser: true
+    },
     "dbName":'xwys-test'
   },
   "redisOption": {
-      "host": "47.75.73.120",
-      "port": "30007",
-      "password": 123456,
-      "db": "xwys-test",
-    },
+    "host": "47.75.73.120",
+    "port": "30007",
+    "password": 123456,
+    "db": "xwys-test",
+  },
   "reptileZxMovieUrl": {
-  "wangzherongyao":{
-        "list": "https://mzdy.tbhmdk.com/app/film-list?page=0&classifyKey=",
-        "search": "https://mzdy.tbhmdk.com/app/video/search?name=",
-        "filmDetail": "https://mzdy.tbhmdk.com/app/film/",
-        "teleplayDetail": "https://mzdy.tbhmdk.com/app/teleplay/"
-     },
-      "xigua": "https://mzdy.tbhmdk.com/app/film-list?page=0&classifyKey=ZX",
+    "wangzherongyao":{
+      "list": "https://mzdy.tbhmdk.com/app/film-list?page=0&classifyKey=",
+      "search": "https://mzdy.tbhmdk.com/app/video/search?name=",
+      "filmDetail": "https://mzdy.tbhmdk.com/app/film/",
+      "teleplayDetail": "https://mzdy.tbhmdk.com/app/teleplay/"
     },
+    "xigua": "https://mzdy.tbhmdk.com/app/film-list?page=0&classifyKey=ZX",
+  },
   "winston": {
     "application": "xyws-01-local",
     "transports": {
