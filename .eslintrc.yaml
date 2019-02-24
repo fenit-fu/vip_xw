@@ -640,13 +640,13 @@ rules:
 
     # 使用Unix换行符"LF"
     # --fix
-    linebreak-style: [error, unix]
-
-    # 指令周围的语句风格
-    lines-around-directive: [error, always]
-
-    # 最大的嵌套深度。
-    max-depth: [error, {max: 4}]
+#    linebreak-style: [error, unix]
+#
+#    # 指令周围的语句风格
+#    lines-around-directive: [error, always]
+#
+#    # 最大的嵌套深度。
+#    max-depth: [error, {max: 4}]
 
     # 指定一行的最大字符数
     # https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md

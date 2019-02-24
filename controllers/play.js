@@ -1,18 +1,12 @@
 require('express-async-errors')
-const rp = require('request-promise')
-const config = require('config')
+const playService = require('../service/play')
 
-class IndexController {
-  async getNewMovieList(req, res) {
-    const type = req.query.type || 'ZX'
-    const options = {
-      url: `${config.get('reptileZxMovieUrl.wangzherongyao')}${type}`,
-      method: 'GET',
-      json: true
-    }
-    res.sendOk(await rp(options))
+class PlayController {
+  async getTrueUrl(req, res) {
+    const filmType = req.query.type
+    const m3u8Url = req.query.m3u8
+    res.sendOk(await playService.findTrueUrl(filmType, m3u8Url))
   }
 }
 
-
-module.exports = new IndexController()
+module.exports = new PlayController()

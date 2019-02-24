@@ -40,28 +40,39 @@ class IndexController {
   async getMovieListByName(req, res) {
     const name = (req.query.name)
     const options = {
-      url: name,
+      url: `${config.get('reptileZxMovieUrl.wangzherongyao.search')}` + encodeURIComponent(name),
+      timeout: 1000 * 5,
       method: 'GET',
-      json: true
+      json:
+          true
     }
     res.sendOk(await rp(options))
   }
 
   async getMovieDetailByUuid(req, res) {
     const id = (req.query.uuid).trim()
-
     try {
       const filmOptions = {
-        //url: 'https://acfun.iqiyi-kuyun.com/20190208/HRcU03fW/index.m3u8',
         url: `${config.get('reptileZxMovieUrl.wangzherongyao.filmDetail')}` + id + '?uuid=' + id,
         method: 'GET',
         json: true
       }
       const filmResult = await rp(filmOptions)
-      return res.sendOk({
-        data: filmResult,
-        type: 'film'
-      })
+      if ((filmResult.url).indexOf('http://v.yimohui2017.com') === -1
+          && (filmResult.url).indexOf('http://v.sanyiwangluo.com') === -1
+          && (filmResult.url).indexOf('v.lyerhuo.com') === -1
+          && (filmResult.url).indexOf('v.ynkqx.com') === -1
+          && (filmResult.url).indexOf('v.zhubodasai.com') === -1
+          && (filmResult.url).indexOf('v.aimushang.com') === -1
+          && (filmResult.url).indexOf('v.shinegobaby.com') === -1) {
+        return res.sendOk({
+          data: filmResult,
+          type: 'film'
+        })
+      }
+      else {
+        return res.sendOk('此视频以后台记录保存即将上架')
+      }
     }
     catch (e) {
       const teleplayOptions = {
