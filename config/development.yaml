@@ -1,5 +1,5 @@
 {
-  "port": 3000,
+  "port": 8080,
   "HOST": "127.0.0.1",
   "mongodbOption": {
     "url": 'mongodb://47.111.28.42:30003',

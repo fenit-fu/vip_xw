@@ -16,8 +16,8 @@ module.exports = function (req, res, next) {
     setAttachment: function (fileName) {
       res.setHeader('Content-Type', 'application/octet-stream')
       res.setHeader(
-          'Content-Disposition',
-          'attachment; filename=rank_' + fileName + '.xlsx'
+        'Content-Disposition',
+        'attachment; filename=rank_' + fileName + '.xlsx'
       )
     }
   }
