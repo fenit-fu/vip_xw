@@ -33,7 +33,7 @@ class IndexController {
         'releaseDate': '2019-02-23',
         'cover': 'https://img.xiguaimg.com/pic/uploadimg/2018-12/20181271134064772.jpg',
         'intro': '阿丽塔：战斗天使》根据日本漫画家木城雪户的代表作《铳梦》改编，讲述了末世时代，半人半机械的生理架构已经不足为奇。某天倒在废墟中仅剩头颅的阿丽塔被艾德医生捡起，以机械为血肉重见人间。但苏醒后她完全丧失了记忆，对自己的身世一无所知',
-        'url': 'http://bilibili.com-l-bilibili.com/20190223/8039_6a310f25/1000k/hls/index.m3u8',
+        'url': 'https://youku.xlabzjx.com/20190223/Bry3WcZu/index.m3u8',
       }, {
         'uuid': '2',
         'name': '一吻定情2019',
