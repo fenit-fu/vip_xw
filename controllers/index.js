@@ -13,17 +13,17 @@ class IndexController {
 
   async getCinemasMovies(req, res) {
     res.sendOk([
-      {
-        'uuid': '7',
-        'name': '绿皮书',
-        'classify': '剧情片',
-        'director': '彼得·法雷利',
-        'starring': '维果·莫腾森,马赫沙拉·阿里,琳达·卡德里尼,塞巴斯蒂安·马尼斯科',
-        'releaseDate': '2019-03-01',
-        'cover': 'http://www.haitum.com/upload/resource/110_27203_thumb.jpg',
-        'intro': '名黑人钢琴家，为前往种族歧视严重的南方巡演，找了一个粗暴的白人混混做司机。在一路开车南下的过程里，截然不同的两人矛盾不断，引发了不少争吵和笑料。但又在彼此最需要的时候，一起共渡难关。行程临近结束，两人也慢慢放下了偏见......绿皮书，是一本专为黑人而设的旅行指南，标注了各城市中允许黑人进入的旅店、餐馆。电影由真实故事改编',
-        'url': 'https://iqiyi.com-l-iqiyi.com/20190118/21145_2958fd4c/1000k/hls/index.m3u8',
-      },
+      // {
+      //   'uuid': '7',
+      //   'name': '绿皮书',
+      //   'classify': '剧情片',
+      //   'director': '彼得·法雷利',
+      //   'starring': '维果·莫腾森,马赫沙拉·阿里,琳达·卡德里尼,塞巴斯蒂安·马尼斯科',
+      //   'releaseDate': '2019-03-01',
+      //   'cover': 'http://www.haitum.com/upload/resource/110_27203_thumb.jpg',
+      //   'intro': '名黑人钢琴家，为前往种族歧视严重的南方巡演，找了一个粗暴的白人混混做司机。在一路开车南下的过程里，截然不同的两人矛盾不断，引发了不少争吵和笑料。但又在彼此最需要的时候，一起共渡难关。行程临近结束，两人也慢慢放下了偏见......绿皮书，是一本专为黑人而设的旅行指南，标注了各城市中允许黑人进入的旅店、餐馆。电影由真实故事改编',
+      //   'url': 'https://iqiyi.com-l-iqiyi.com/20190118/21145_2958fd4c/1000k/hls/index.m3u8',
+      // },
       {
         'uuid': '1',
         'name': '战斗天使',
