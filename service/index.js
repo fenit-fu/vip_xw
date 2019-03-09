@@ -5,7 +5,12 @@ const NEW_MOVIES = require('../constants/newmovies')
 
 class HomeService {
   async getMovieDetailByUuid(uuid) {
-    if (uuid === '7')
+    if (uuid === '09b18618bbda4fa1ab2877bec53f1800')
+      return {
+        data: NEW_MOVIES.MANUAL[7],
+        type: 'film'
+      }
+    if (uuid === '09b18618bbda4fa1ab2877bec53f1811')
       return {
         data: NEW_MOVIES.MANUAL[6],
         type: 'film'

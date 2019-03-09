@@ -14,7 +14,18 @@ class IndexController {
   async getCinemasMovies(req, res) {
     res.sendOk([
       // {
-      //   'uuid': '7',
+      //   'uuid': '09b18618bbda4fa1ab2877bec53f1811',
+      //   'name': '驯龙高手3',
+      //   'classify': '动画,奇幻,冒险',
+      //   'director': '迪恩·德布洛斯',
+      //   'starring': '杰伊·巴鲁切尔,亚美莉卡·费雷拉,凯特·布兰切特,基特·哈灵顿',
+      //   'releaseDate': '2019-03-01',
+      //   'cover': 'http://www.haitum.com/upload/resource/110_27203_thumb.jpg',
+      //   'intro': '梦工场动画将倾情奉献一段跌宕起伏的故事，主人公们不断成长，寻找面对未知的勇气，始终不离不弃。一位维京少年和一只令人生畏的夜煞飞龙之间看似不可能的友情，已经演变成了一段持续彼此一生的史诗级冒险',
+      //   'url': 'https://bilibili.com-h-bilibili.com/20190309/8073_b422165b/index.m3u8',
+      // },
+      // {
+      //   'uuid': '09b18618bbda4fa1ab2877bec53f1800',
       //   'name': '绿皮书',
       //   'classify': '剧情片',
       //   'director': '彼得·法雷利',
