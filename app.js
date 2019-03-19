@@ -7,6 +7,7 @@ require('express-async-errors')
 const app = express()
 
 require('./mongoose')
+require('./redis')
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.urlencoded({extended: true}))

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const url = 'mongodb://47.75.73.120:30003/xwys-test'
+const url = 'mongodb://39.98.215.216:30003/xwys-test'
 
 mongoose.connect(url)
 const db = mongoose.connection
