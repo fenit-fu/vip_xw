@@ -5,46 +5,17 @@ const NEW_MOVIES = require('../constants/newmovies')
 
 class HomeService {
   async getMovieDetailByUuid(uuid) {
-    if (uuid === '09b18618bbda4fa1ab2877bec53f1800')
+    const uuidResults = _.map(NEW_MOVIES.MANUAL, function (item) {
+      return item.uuid
+    })
+
+    if (uuidResults.indexOf(uuid) !== -1) {
       return {
-        data: NEW_MOVIES.MANUAL[7],
+        data: NEW_MOVIES.MANUAL[+uuid - 1],
         type: 'film'
       }
-    if (uuid === '09b18618bbda4fa1ab2877bec53f1811')
-      return {
-        data: NEW_MOVIES.MANUAL[6],
-        type: 'film'
-      }
-    if (uuid === '1')
-      return {
-        data: NEW_MOVIES.MANUAL[0],
-        type: 'film'
-      }
-    if (uuid === '2')
-      return {
-        data: NEW_MOVIES.MANUAL[1],
-        type: 'film'
-      }
-    if (uuid === '3')
-      return {
-        data: NEW_MOVIES.MANUAL[2],
-        type: 'film'
-      }
-    if (uuid === '4')
-      return {
-        data: NEW_MOVIES.MANUAL[3],
-        type: 'film'
-      }
-    if (uuid === '5')
-      return {
-        data: NEW_MOVIES.MANUAL[4],
-        type: 'film'
-      }
-    if (uuid === '6')
-      return {
-        data: NEW_MOVIES.MANUAL[5],
-        type: 'film'
-      }
+    }
+
     try {
       const filmOptions = {
         url: `${config.get('reptileZxMovieUrl.wangzherongyao.filmDetail')}` + uuid + '?uuid=' + uuid,
