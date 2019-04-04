@@ -14,7 +14,9 @@ class IndexController {
   }
 
   async getCinemasMovies(req, res) {
-    res.sendOk((NEW_MOVIES.MANUAL))
+    res.sendOk((_.sortBy(NEW_MOVIES.MANUAL, function (item) {
+      return -item.uuid
+    })))
   }
 
   async getNewMovieList(req, res) {

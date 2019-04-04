@@ -68,7 +68,7 @@ exports.MANUAL = [{
   'director': '迪恩·德布洛斯',
   'starring': '杰伊·巴鲁切尔,亚美莉卡·费雷拉,凯特·布兰切特,基特·哈灵顿',
   'releaseDate': '2019-03-01',
-  'cover': 'http://www.haitum.com/upload/resource/110_27203_thumb.jpg',
+  'cover': 'https://img.xiguaimg.com/pic/uploadimg/2019-1/20191161235661242.jpg',
   'intro': '梦工场动画将倾情奉献一段跌宕起伏的故事，主人公们不断成长，寻找面对未知的勇气，始终不离不弃。一位维京少年和一只令人生畏的夜煞飞龙之间看似不可能的友情，已经演变成了一段持续彼此一生的史诗级冒险',
   'url': 'https://bilibili.com-h-bilibili.com/20190309/8073_b422165b/index.m3u8',
 }, {
@@ -98,7 +98,7 @@ exports.MANUAL = [{
   'director': '林孝謙',
   'starring': '石知田 吴映洁 陈庭妮 张书豪 刘以豪 陈意涵',
   'releaseDate': '2019-03-17',
-  'cover': 'https://img.xiguaimg.com/pic/uploadimg/2019-3/201931518402848991.jp',
+  'cover': 'https://img.xiguaimg.com/pic/uploadimg/2019-3/201931518402848991.jpg',
   'intro': '讲述了张哲凯（K）和宋媛媛（Cream）两人自高中失去家人后就成为彼此最亲密的朋友、唯一的家人，他们相爱相依，却不是恋人，只因K不定时复发的疾病让他不敢承诺！为了让Cream拥有他给不起的幸福，他决定隐瞒病情，擅自为心爱的人找到其他可以托付一生的对象......与其自私为对方规划幸福，何不奋不顾身勇敢爱一次',
   'url': ' https://bilibili.com-h-bilibili.com/20190314/8103_0e45722b/1000k/hls/index.m3u8',
 }, {
