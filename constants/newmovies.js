@@ -131,7 +131,18 @@ exports.MANUAL = [{
   'cover': 'https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D478%2C0%2C668%2C943%3Bw%3D138%3Bq%3D95/sign=de41de8554ee3d6d3689dd8b7e225a1a/f2deb48f8c5494ee7f63c23b20f5e0fe99257e4b.jpg',
   'intro': '弗雷迪·默丘里成名前在机场做行李搬运工。有一天，默丘里毛遂自荐加入杰·泰勒与布莱恩·梅的乐团，恰巧当天原本的主唱辞职，默丘里用自己横跨四个八度的超广音域说服两人，从此开启皇后乐团的摇滚传奇',
   'url': 'https://cn2.zuidadianying.com/ppvod/8603C1C12BF6FB6B07DF89F1485A6C93.m3u8',
+}, {
+  'uuid': '14',
+  'name': '反贪风暴4',
+  'classify': '犯罪、动作、悬疑',
+  'director': '林德禄',
+  'starring': '古天乐，郑嘉颖，林峯，林家栋，周秀娜',
+  'releaseDate': '2019-03-22',
+  'cover': 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554643035375&di=cc7198f006ba9ce339f8c6eeeca8c595&imgtype=0&src=http%3A%2F%2Fimg.cnhuadong.net%2FT8ZdAbABCD1befEKs6tXCIOfqonInuDlWVwynTXfbUdv7n9QAuLX2e9sF9ZV3ef0yrm.jpg',
+  'intro': '廉政公署收到报案人廖雨萍（周秀娜饰）的实名举报，举报正在坐牢的富二代曹元元（林峯饰）涉嫌行贿监狱里的监督沈济全（谭耀文饰）以及惩教员，首席调查主任陆志廉（古天乐饰）决定深入虎穴，卧底狱中。在监狱里，被陆志廉送入监狱的前警司黄文彬（林家栋饰）以及曹元元两大帮派势成水火',
+  'url': 'http://cn2.zuidadianying.com/20190405/NRQd7pPk/800kb/hls/index.m3u8',
 }]
+
 // https://cn2.zuidadianying.com/ppvod/8603C1C12BF6FB6B07DF89F1485A6C93.m3u8 波西米亚卡狂想曲
 //   https://cn2.zuidadianying.com/ppvod/A17BCC0968872CBD62B39C4C620AE975.m3u8  惊奇队长
 //     https://iqiyi.com-l-iqiyi.com/20190329/22371_e410bfdc/1000k/hls/index.m3u8 人间喜剧
