@@ -1,4 +1,6 @@
 const express = require('express')
+const app = express()
+
 const IndexController = require('../controllers/index')
 const router = express.Router()
 
@@ -9,4 +11,3 @@ router.get('/seach', IndexController.getMovieListByName)
 router.get('/detail', IndexController.getMovieDetailByUuid)
 
 module.exports = router
-
