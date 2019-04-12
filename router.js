@@ -4,6 +4,8 @@ module.exports = function (app) {
   app.use('/api/v1/play', require('./router/play'))
   app.use(function (req, res) {
     if (!res.headersSent) {
+console.log(1111)
+console.log(222)
       res.status(404).send('router: ' + req.path + 'not found 404')
     }
   })
