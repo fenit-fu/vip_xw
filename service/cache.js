@@ -20,9 +20,11 @@ class CacheService {
       return JSON.parse(result)
     }
     const resultFromFn = await fn()
-    _.each(NEW_MOVIES.MANUAL, function (item) {
-      resultFromFn.unshift(item)
-    })
+    if (key === 'new_ZX') {
+      _.each(NEW_MOVIES.MANUAL, function (item) {
+        resultFromFn.unshift(item)
+      })
+    }
     redis.set(key, JSON.stringify(resultFromFn), 'EX', options.ttl)
     return resultFromFn
   }
