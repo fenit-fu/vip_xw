@@ -141,6 +141,16 @@ exports.MANUAL = [{
   'cover': 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554643035375&di=cc7198f006ba9ce339f8c6eeeca8c595&imgtype=0&src=http%3A%2F%2Fimg.cnhuadong.net%2FT8ZdAbABCD1befEKs6tXCIOfqonInuDlWVwynTXfbUdv7n9QAuLX2e9sF9ZV3ef0yrm.jpg',
   'intro': '廉政公署收到报案人廖雨萍（周秀娜饰）的实名举报，举报正在坐牢的富二代曹元元（林峯饰）涉嫌行贿监狱里的监督沈济全（谭耀文饰）以及惩教员，首席调查主任陆志廉（古天乐饰）决定深入虎穴，卧底狱中。在监狱里，被陆志廉送入监狱的前警司黄文彬（林家栋饰）以及曹元元两大帮派势成水火',
   'url': 'http://cn2.zuidadianying.com/20190405/NRQd7pPk/800kb/hls/index.m3u8',
+}, {
+  'uuid': '15',
+  'name': '复仇者联盟4',
+  'classify': '动作、科幻、奇幻、冒险',
+  'director': '安东尼·罗素、乔·罗素',
+  'starring': '小罗伯特·唐尼，克里斯·埃文斯，马克·鲁法洛，克里斯·海姆斯沃斯，斯嘉丽·约翰逊，杰瑞米·雷纳',
+  'releaseDate': '2019-04-24',
+  'cover': 'https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike272%2C5%2C5%2C272%2C90/sign=f876aa402f3fb80e18dc698557b8444b/2cf5e0fe9925bc31a5ffa7e950df8db1cb137025.jpg',
+  'intro': '故事发生在《复仇者联盟3 无限战争》之后，灭霸使用无限手套的力量，造成全宇宙一半的生命随机消失，有的人永远失去了挚爱和家人，复仇者联盟部分成员也因此消失了。在泰坦星上和灭霸结束了战斗的，钢铁侠托尼在返回地球的途中遭遇了缺水和没有粮食的境地，幸得惊奇队长出手相救，回到地球的惊奇队长与其他英雄们，决定前去讨伐灭霸并寻回宝石，却发现年老体弱的退休老农灭霸已经将宝石毁掉了。愤怒的雷神砍下了年老灭霸的头颅，复仇者从此不再勇猛如初。五年过去了，已经消失的斯科特·朗（蚁人）来到了复仇者总部，并告知众人，他们仍然有机会可以逆转灭霸的所作所为',
+  'url': 'https://youku.com-okzy.com/20190428/146_a856ed37/index.m3u8',
 }]
 
 // https://cn2.zuidadianying.com/ppvod/8603C1C12BF6FB6B07DF89F1485A6C93.m3u8 波西米亚卡狂想曲
