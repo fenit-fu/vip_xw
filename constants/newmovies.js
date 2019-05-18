@@ -158,7 +158,7 @@ exports.MANUAL = [{
   'director': '伯·莱特曼',
   'starring': '瑞恩·雷诺兹 / 贾斯蒂斯·史密斯 / 凯瑟琳·纽顿 / 克里斯·吉尔 / 比尔·奈伊',
   'releaseDate': '2019-05-10',
-  'cover': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2555538168.webp',
+  'cover': 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1318163724,1731300619&fm=11&gp=0.jpg',
   'intro': '讲述了蒂姆·古德曼（贾 斯 提·史密斯饰） 为寻找下落不明的父亲来到莱姆市，意外与父亲的前宝可梦搭档大侦探皮卡丘相遇，并惊讶地发现自己是唯一能听懂皮卡丘说话的人类，他们决定组队踏上揭开真相的刺激冒险之路。探案过程中他们邂逅了各式各样 的宝可梦，并意外发现了一个足以毁灭整个宝可梦宇宙的惊天阴谋',
   'url': 'https://bilibili.com-h-bilibili.com/20190512/8482_316e2fa1/1000k/hls/index.m3u8',
 }, {
@@ -168,7 +168,7 @@ exports.MANUAL = [{
   'director': '卫·F·桑德伯格',
   'starring': ' 扎克瑞·莱维 / 马克·斯特朗 / 亚瑟·安其 / 杰克·迪伦·格雷泽 / 杰曼·翰苏 ',
   'releaseDate': '2019-04-05',
-  'cover': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2551249211.webp',
+  'cover': 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558189300554&di=411dca720898f8a6f392ca1dcb870ed5&imgtype=0&src=http%3A%2F%2Fupload.mnw.cn%2F2019%2F0404%2F1554376587245.jpg',
   'intro': '因儿时与母亲失散，少年比利（亚瑟·安其 Asher Angel 饰）辗转多个家庭，却执着地要回到妈妈身边。当他再度栖身一个由养子养女的大家庭时，却阴差阳错来到某个未知的领域，并且成为古老巫师的继承人。当他喊出“沙赞”时，便会瞬间变成拥有强壮成年人身体的超级英雄雷霆沙赞（扎克瑞·莱维 Zachary Levi 饰）。比利兴奋不已，和新家的兄弟',
   'url': 'https://bilibili.com-h-bilibili.com/20190511/8466_f1353276/1000k/hls/index.m3u8',
 }, {
@@ -178,7 +178,7 @@ exports.MANUAL = [{
   'director': '娜丁·拉巴基',
   'starring': ' 赞恩·阿尔·拉菲亚 / 约丹诺斯·希费罗 / 博鲁瓦蒂夫·特雷杰·班科尔 / 卡萨尔·艾尔·哈达德 / 法迪·尤瑟夫',
   'releaseDate': '2019-04-24',
-  'cover': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2555295759.webp',
+  'cover': 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558189234274&di=fa3d4e041c51d78e6a17166c85d9efc1&imgtype=0&src=http%3A%2F%2Fzaozhuang.dzwww.com%2Fnews%2Fty%2F201903%2FW020190328362721950201.jpg',
   'intro': '法庭上，十二岁的男孩赞恩向法官状告他的亲生父母，原因是，他们给了他生命。是什么样的经历让一个孩子做出如此不可思议的举动？故事中，赞恩的父母在无力抚养和教育的状况下依然不停生育，作为家中的长子赞恩，弱小的肩膀承担了无数生活的重压。当妹妹被强行卖给商贩为妻时，赞恩愤怒离家，之后遇到一对没有合法身份的母子，相互扶持勉强生活。然而生活并没有眷顾赞恩，重重磨难迫使他做出了令人震惊的举动……',
   'url': ' https://iqiyi.com-l-iqiyi.com/20190301/21772_5abc4341/1000k/hls/index.m3u8',
 }]
