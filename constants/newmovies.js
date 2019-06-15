@@ -181,10 +181,35 @@ exports.MANUAL = [{
   'cover': 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558189234274&di=fa3d4e041c51d78e6a17166c85d9efc1&imgtype=0&src=http%3A%2F%2Fzaozhuang.dzwww.com%2Fnews%2Fty%2F201903%2FW020190328362721950201.jpg',
   'intro': '法庭上，十二岁的男孩赞恩向法官状告他的亲生父母，原因是，他们给了他生命。是什么样的经历让一个孩子做出如此不可思议的举动？故事中，赞恩的父母在无力抚养和教育的状况下依然不停生育，作为家中的长子赞恩，弱小的肩膀承担了无数生活的重压。当妹妹被强行卖给商贩为妻时，赞恩愤怒离家，之后遇到一对没有合法身份的母子，相互扶持勉强生活。然而生活并没有眷顾赞恩，重重磨难迫使他做出了令人震惊的举动……',
   'url': ' https://iqiyi.com-l-iqiyi.com/20190301/21772_5abc4341/1000k/hls/index.m3u8',
+}, {
+  'uuid': '19',
+  'name': 'X战警：黑凤凰',
+  'classify': '剧情',
+  'director': '苏菲·特纳',
+  'starring': '主演：苏菲·特纳 / 詹姆斯·麦卡沃伊 / 迈克尔·法斯宾德',
+  'releaseDate': '2019-06-11',
+  'cover': 'http://img5.mtime.cn/CMS/Gallery/2019/02/27/074216.89038437_1000.jpg',
+  'intro': '影片剧情围绕X战警中最受欢迎成员之一的琴·葛蕾展开，讲述她逐渐转化为黑凤凰的故事。在一次危及生命的太空营救行动中，琴被神秘的宇宙力量击中，成为最强大的变种人',
+  'url': 'https://youku.pmkiki.com/20190613/uk5NGAge/700kb/hls/index.m3u8',
+}, {
+  'uuid': '20',
+  'name': '追龙2',
+  'classify': '剧情',
+  'director': '王晶',
+  'starring': '梁家辉 / 古天乐 / 林家栋 / 邱意浓',
+  'releaseDate': '2019-06-14',
+  'cover': 'https://static.cnbetacdn.com/article/2019/0428/da961906b05e4c0.jpg',
+  'intro': '《追龙Ⅱ》是王晶编剧并执导的剧情电影，由梁家辉、古天乐、林家栋、任达华、邱意浓等主演。悍匪龙志强，在香港回归前，乘香港英政府不作为，而屡犯巨案，先后绑架富豪利家及雷家之长子，勒索超过二十亿元，事主怕被报复, 交赎款后都不敢报警。中国公安部极为关注，与香港警方合力，派香港警员何天卧底潜入龙志强犯罪团伙，发现他正策划绑架澳门富豪贺不凡，终勇擒龙志强，救出贺不凡',
+  'url': 'https://youku.pmkiki.com/20190613/AO3B504t/700kb/hls/index.m3u8',
+}, {
+  'uuid': '21',
+  'name': '哥斯拉2：怪兽之王',
+  'classify': '剧情',
+  'director': '迈克尔·道赫蒂 ',
+  'starring': ' 迈克尔·道赫蒂 / 扎克·希尔兹',
+  'releaseDate': '2019-06-13',
+  'cover': 'http://imgbdb2.bendibao.com/shbdb/live/20194/23/2019423162420_14529.jpg',
+  'intro': '随着《哥斯拉》和《金刚：骷髅岛》在全球范围内取得成功，传奇影业和华纳兄弟影业联手开启了怪兽宇宙系列电影的新篇章—一部史诗级动作冒险巨制。在这部电影中，哥斯拉将和众多大家在流行文化中所熟知的怪兽展开较量。全新故事中，研究神秘动物学的机构“帝王组织”将勇敢直面巨型怪兽，其中强大的哥斯拉也将和魔斯拉、拉顿和它的死对头——三头王者基多拉展开激烈对抗。当这些只存在于传说里的超级生物再度崛起时，它们将展开王者争霸，人类的命运岌岌可危',
+  'url': 'https://youku.pmkiki.com/20190605/lxnAOORr/700kb/hls/index.m3u8',
 }]
 
-// https://cn2.zuidadianying.com/ppvod/8603C1C12BF6FB6B07DF89F1485A6C93.m3u8 波西米亚卡狂想曲
-//   https://cn2.zuidadianying.com/ppvod/A17BCC0968872CBD62B39C4C620AE975.m3u8  惊奇队长
-//     https://iqiyi.com-l-iqiyi.com/20190329/22371_e410bfdc/1000k/hls/index.m3u8 人间喜剧
-//       https://bilibili.com-h-bilibili.com/20190314/8103_0e45722b/1000k/hls/index.m3u8  比悲伤更
-//         https://iqiyi.com-l-iqiyi.com//20190325/22360_0f46a27f/1000k/hls/index.m3u8   老师好
