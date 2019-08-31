@@ -5,7 +5,7 @@ const config = require('config')
 const carouseModel = require('../mongoose').carouse
 const carouseService = require('../service/index')
 const redisCache = require('../service/cache')
-const NEW_MOVIES = require('../constants/newmovies')
+const util = require('../constants/util')
 
 class IndexController {
   async getCarouselList(req, res) {
@@ -13,48 +13,40 @@ class IndexController {
     res.sendOk(result)
   }
 
-  async getCinemasMovies(req, res) {
-    res.sendOk((_.sortBy(NEW_MOVIES.MANUAL, function (item) {
-      return -item.uuid
-    })))
-  }
-
   async getNewMovieList(req, res) {
-    const type = req.query.type || 'ZX'
     const options = {
-      url: `${config.get('reptileZxMovieUrl.wangzherongyao.list')}${type}`,
+      url: `${config.get('reptileZxMovieUrl.xiaoxiaoys.list')}`,
       method: 'GET',
+      timeout: 1000 * 5,
+      gzip:true,
       json: true
     }
-    const filterResult = await redisCache.getset(`new_${type}`, async function () {
-      const result = await rp(options)
-      return _.filter(result, (item) => {
-        return (item.url).indexOf('http://v.yimohui2017.com') === -1
-          && (item.url).indexOf('http://v.sanyiwangluo.com') === -1
-          && (item.url).indexOf('v.lyerhuo.com') === -1
-          && (item.url).indexOf('v.ynkqx.com') === -1
-          && (item.url).indexOf('v.zhubodasai.com') === -1
-          && (item.url).indexOf('v.aimushang.com') === -1
-          && (item.url).indexOf('v.shinegobaby.com') === -1
-      })
-    }, {ttl: 3600 * 24 * 30})
-    res.sendOk(filterResult)
+    // const filterResult = await redisCache.getset('slideAndHot', async function () {
+    //   return await rp(options)
+    // }, {ttl: 3600 * 24 * 2})
+    const result = await rp(options)
+    res.sendOk(util._buildHomePageResult(result))
   }
 
   async getMovieListByName(req, res) {
     const name = (req.query.name)
     const options = {
-      url: `${config.get('reptileZxMovieUrl.wangzherongyao.search')}` + encodeURIComponent(name),
+      url: `${config.get('reptileZxMovieUrl.xiaoxiaoys.seach')}` + encodeURIComponent(name),
       timeout: 1000 * 5,
+      gzip:true,
       method: 'GET',
       json: true
     }
-    res.sendOk(await rp(options))
+    const result = await rp(options)
+    res.sendOk(util._buildSeachListResult(result))
   }
 
   async getMovieDetailByUuid(req, res) {
-    const id = (req.query.uuid).trim()
-    res.sendOk(await carouseService.getMovieDetailByUuid(id))
+    const id = req.query.uuid || 47672
+    const playIndex = req.query.playIndex || 1
+    const result = await carouseService.getMovieDetailByUuid(id)
+
+    res.sendOk(await util._buildDetailResult(result, playIndex))
   }
 }
 

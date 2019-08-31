@@ -1,7 +1,7 @@
 const Promise = require('bluebird')
 const _ = require('lodash')
 const redis = require('../redis')
-const NEW_MOVIES = require('../constants/newmovies')
+const NEW_MOVIES = require('../constants/util')
 
 
 class CacheService {
@@ -15,16 +15,12 @@ class CacheService {
 
   async getset(key, fn, options = {}) {
     const result = await redis_get(key)
-
+    console.log('result=',JSON.stringify(result))
     if (result) {
       return JSON.parse(result)
     }
     const resultFromFn = await fn()
-    if (key === 'new_ZX') {
-      _.each(NEW_MOVIES.MANUAL, function (item) {
-        resultFromFn.unshift(item)
-      })
-    }
+console.log('resultFromFn=',resultFromFn)
     redis.set(key, JSON.stringify(resultFromFn), 'EX', options.ttl)
     return resultFromFn
   }

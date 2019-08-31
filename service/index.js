@@ -1,70 +1,19 @@
 const config = require('config')
-const _ = require('lodash')
 const rp = require('request-promise')
-const NEW_MOVIES = require('../constants/newmovies')
 
 class HomeService {
   async getMovieDetailByUuid(uuid) {
-    const uuidResults = _.map(NEW_MOVIES.MANUAL, function (item) {
-      return item.uuid
-    })
-
-    if (uuidResults.indexOf(uuid) !== -1) {
-      return {
-        data: NEW_MOVIES.MANUAL[+uuid - 1],
-        type: 'film'
-      }
-    }
-
     try {
-      const filmOptions = {
-        url: `${config.get('reptileZxMovieUrl.wangzherongyao.filmDetail')}` + uuid + '?uuid=' + uuid,
+      const options = {
+        url: `${config.get('reptileZxMovieUrl.xiaoxiaoys.getdetail')}` + uuid,
         method: 'GET',
+        timeout: 1000 * 5,
+        gzip:true,
         json: true
       }
-      const filmResult = await rp(filmOptions)
-      if ((filmResult.url).indexOf('http://v.yimohui2017.com') === -1
-        && (filmResult.url).indexOf('http://v.sanyiwangluo.com') === -1
-        && (filmResult.url).indexOf('v.lyerhuo.com') === -1
-        && (filmResult.url).indexOf('v.ynkqx.com') === -1
-        && (filmResult.url).indexOf('v.zhubodasai.com') === -1
-        && (filmResult.url).indexOf('v.aimushang.com') === -1
-        && (filmResult.url).indexOf('v.shinegobaby.com') === -1
-        && (filmResult.url).indexOf('v.tian1886.com') === -1) {
-        return {
-          data: filmResult,
-          type: 'film'
-        }
-      }
-      else {
-        return '此视频以后台记录保存即将上架'
-      }
-    }
-    catch (e) {
-      const teleplayOptions = {
-        url: `${config.get('reptileZxMovieUrl.wangzherongyao.teleplayDetail')}` + uuid + '?uuid=' + uuid,
-        method: 'GET',
-        json: true
-      }
-      const teleplayResult = await rp(teleplayOptions)
+      return await rp(options)
+    } catch (e) {
 
-      teleplayResult.teleplayLinkDtoList = _.filter(teleplayResult.teleplayLinkDtoList, (item) => {
-        return (item.url).indexOf('v.yimohui2017.com') === -1
-          && (item.url).indexOf('v.sanyiwangluo.com') === -1
-          && (item.url).indexOf('v.lyerhuo.com') === -1
-          && (item.url).indexOf('v.ynkqx.com') === -1
-          && (item.url).indexOf('v.zhubodasai.com') === -1
-          && (item.url).indexOf('v.aimushang.com') === -1
-          && (item.url).indexOf('v.shinegobaby.com') === -1
-          && (item.url).indexOf('v.tian1886.com') === -1
-          && (item.url).indexOf('v2.aimushang.com') === -1
-          && (item.url).indexOf('v.gmitking.com') === -1
-      })
-
-      return {
-        data: teleplayResult,
-        type: 'teleplay'
-      }
     }
   }
 }

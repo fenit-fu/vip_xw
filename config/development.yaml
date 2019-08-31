@@ -22,6 +22,12 @@
       "teleplayDetail": "https://mzdy.tbhmdk.com/app/teleplay/"
     },
     "xigua": "https://mzdy.tbhmdk.com/app/film-list?page=0&classifyKey=ZX",
+    "xiaoxiaoys":{
+      "list":"https://android.xiaoxiaoapps.com/index?tab=0",
+      "seach":"https://android.xiaoxiaoapps.com/search?wd=",
+      "getdetail":"https://android.xiaoxiaoapps.com/vod/show/",
+      "getM3u8":"https://android.xiaoxiaoapps.com/vod/reqplay/"
+    }
   },
   "winston": {
     "application": "xyws-01-local",
