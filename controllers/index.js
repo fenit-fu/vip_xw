@@ -1,6 +1,5 @@
 require('express-async-errors')
 const rp = require('request-promise')
-const _ = require('lodash')
 const config = require('config')
 const carouseModel = require('../mongoose').carouse
 const carouseService = require('../service/index')
@@ -18,13 +17,13 @@ class IndexController {
       url: `${config.get('reptileZxMovieUrl.xiaoxiaoys.list')}`,
       method: 'GET',
       timeout: 1000 * 5,
-      gzip:true,
+      gzip: true,
       json: true
     }
-    // const filterResult = await redisCache.getset('slideAndHot', async function () {
-    //   return await rp(options)
-    // }, {ttl: 3600 * 24 * 2})
-    const result = await rp(options)
+    const result = await redisCache.getset('slideAndHot', async function () {
+      return await rp(options)
+    }, {ttl: 3600 * 24 * 2})
+
     res.sendOk(util._buildHomePageResult(result))
   }
 
@@ -33,7 +32,7 @@ class IndexController {
     const options = {
       url: `${config.get('reptileZxMovieUrl.xiaoxiaoys.seach')}` + encodeURIComponent(name),
       timeout: 1000 * 5,
-      gzip:true,
+      gzip: true,
       method: 'GET',
       json: true
     }

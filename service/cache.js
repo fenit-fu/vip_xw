@@ -15,12 +15,11 @@ class CacheService {
 
   async getset(key, fn, options = {}) {
     const result = await redis_get(key)
-    console.log('result=',JSON.stringify(result))
     if (result) {
       return JSON.parse(result)
     }
     const resultFromFn = await fn()
-console.log('resultFromFn=',resultFromFn)
+
     redis.set(key, JSON.stringify(resultFromFn), 'EX', options.ttl)
     return resultFromFn
   }

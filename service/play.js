@@ -1,16 +1,9 @@
 const rp = require('request-promise')
-const _ = require('lodash')
 
 class PlayService {
-  async findTrueUrl(filmType, m3u8Url) {
+  async findTrueUrl(m3u8Url) {
     const urlResult = PlayService.analysisDetailUrl(m3u8Url)
-    switch (filmType) {
-      case 'teleplay':
-        return await PlayService.getTeleplayTrueUrl(urlResult)
-      case 'film':
-        return await PlayService.getFilmTrueUrl(urlResult)
-      default:
-    }
+    return await PlayService.getFilmTrueUrl(urlResult)
   }
 
   static exitTsFile(result) {
@@ -48,12 +41,10 @@ class PlayService {
           json: true
         })
         return PlayService.exitTsFile(result1) ? urlResult.url1 + result.split('\n')[2] : urlResult.url2 + '/' + result.split('\n')[2]
-      }
-      else {
+      } else {
         return urlResult.m3u8Url
       }
-    }
-    catch (e) {
+    } catch (e) {
       console.log(e)
       return '资源正在同步更新,敬请期待'
     }
@@ -68,16 +59,13 @@ class PlayService {
       if (PlayService.exitTsFile(result)) {
         if (result.split('\n')[2].substring(0, 1).indexOf('/') === -1) {
           return urlResult.url2 + '/' + result.split('\n')[2]
-        }
-        else {
+        } else {
           return urlResult.url1 + result.split('\n')[2]
         }
-      }
-      else {
+      } else {
         return urlResult.m3u8Url
       }
-    }
-    catch (e) {
+    } catch (e) {
       console.log(e)
       return '资源正在同步更新,敬请期待'
     }
