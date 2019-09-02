@@ -36,7 +36,6 @@ class PlayService {
       if (PlayService.exitTsFile(result)) {
         const result1 = await rp({
           url: urlResult.url2 + '/' + result.split('\n')[2],
-          timeout: 1000 * 10,
           method: 'GET',
           json: true
         })
