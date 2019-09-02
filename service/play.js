@@ -3,7 +3,8 @@ const rp = require('request-promise')
 class PlayService {
   async findTrueUrl(m3u8Url) {
     const urlResult = PlayService.analysisDetailUrl(m3u8Url)
-    return await PlayService.getFilmTrueUrl(urlResult)
+    return m3u8Url
+   // return await PlayService.getFilmTrueUrl(urlResult)
   }
 
   static exitTsFile(result) {
