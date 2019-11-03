@@ -26,7 +26,8 @@
       "list":"https://android.xiaoxiaoapps.com/index?tab=0",
       "seach":"https://android.xiaoxiaoapps.com/search?wd=",
       "getdetail":"https://android.xiaoxiaoapps.com/vod/show/",
-      "getM3u8":"https://android.xiaoxiaoapps.com/vod/reqplay/"
+      "getM3u8":"https://android.xiaoxiaoapps.com/vod/reqplay/",
+      "viewRankList":"https://android.xiaoxiaoapps.com/vod/day-"
     }
   },
   "winston": {

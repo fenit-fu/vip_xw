@@ -1,8 +1,5 @@
 const Promise = require('bluebird')
-const _ = require('lodash')
 const redis = require('../redis')
-const NEW_MOVIES = require('../constants/util')
-
 
 class CacheService {
   async zrevrange(key, start, end) {

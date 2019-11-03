@@ -14,5 +14,5 @@ module.exports = (mongoose) => {
   return {
     carouse: mongoose.model('carouse', IndexCarouseSchema)
   }
-
 }
+

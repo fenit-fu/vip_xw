@@ -22,6 +22,17 @@ const _buildSeachListResult = function (result) {
   })
 }
 
+const _buildViewRanksResult = function (result) {
+  return result.data.vodrows.map(function (data) {
+    return {
+      uuid: data.vodid,
+      name: data.title,
+      cover: data.coverpic,
+      episodeStatustext: data.episode_statustext
+    }
+  })
+}
+
 const _buildHomePageResult = function (result) {
   return {
     sliderows: result.data.sliderows.map(function (data) {
@@ -63,5 +74,6 @@ const _buildDetailResult = async function (result, playIndex) {
 module.exports = {
   _buildSeachListResult,
   _buildHomePageResult,
-  _buildDetailResult
+  _buildDetailResult,
+  _buildViewRanksResult
 }
