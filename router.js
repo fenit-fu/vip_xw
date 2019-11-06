@@ -1,5 +1,4 @@
 module.exports = function (app) {
-  //app.use('/api/v1', require('./middlewares/ip'))
   app.use('/api/v1/home', require('./router/index'))
   app.use('/api/v1/play', require('./router/play'))
   app.use(function (req, res) {
