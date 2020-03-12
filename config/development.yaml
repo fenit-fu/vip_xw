@@ -23,10 +23,10 @@
     },
     "xigua": "https://mzdy.tbhmdk.com/app/film-list?page=0&classifyKey=ZX",
     "xiaoxiaoys":{
-      "list":"https://android.xiaoxiaoapps.com/index?tab=0",
-      "seach":"https://android.xiaoxiaoapps.com/search?wd=",
-      "getdetail":"https://android.xiaoxiaoapps.com/vod/show/",
-      "getM3u8":"https://android.xiaoxiaoapps.com/vod/reqplay/",
+      "list":"https://sk4848y8b6qkymisc57n.xiaoxiaoimg.com/index?tab=0&apiVersion=28&deviceModel=SM-G9500&brand=samsung&deviceName=dreamqltechn&serial=988ed5375952443333&platform=android"
+        "seach":"https://sk4848y8b6qkymisc57n.xiaoxiaoimg.com/search?page=1&wd=",
+      "getdetail":"https://sk4848y8b6qkymisc57n.xiaoxiaoimg.com/vod/show/",
+      "getM3u8":"https://sk4848y8b6qkymisc57n.xiaoxiaoimg.com/vod/reqplay/",
       "viewRankList":"https://android.xiaoxiaoapps.com/vod/day-"
     }
   },
